@@ -4,43 +4,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Learn more about The Capital Box, a platform offering financial insights, market trends, and investment strategies." />
+    content="Learn more about The Capital Box - your go-to platform for financial insights, market trends, and investment strategies." />
 
-  <title>The Capital Box - Retirement Solution</title>
+  <title>The Capital Box - About Us</title>
 
-  <!-- Preload critical CSS for better performance -->
-  <link rel="preload" href="/src/css/styles.css" as="style" />
-  <link rel="stylesheet" href="/src/css/styles.css" />
-  <link rel="stylesheet" href="/src/css/global.css" />
+  <!-- Preload main CSS file for performance improvement -->
+  <link rel="preload" href="/styles.css" as="style" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/global.css" />
 
-  <!-- Preconnect for faster external resource loading -->
+  <!-- Preconnect to external domains for faster resource loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Favicon with multiple sizes for cross-device compatibility -->
+  <!-- Favicon -->
   <link rel="icon" href="/public/assets/logo-1.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="/public/assets/logo-1.png" type="image/png" sizes="16x16" />
 
-  <!-- Google Fonts -->
+  <!-- Web Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-  <!-- Open Graph Meta Tags for better social media preview -->
-  <meta property="og:title" content="The Capital Box - Retirement Solution" />
+  <!-- Open Graph Meta Tags for social sharing -->
+  <meta property="og:title" content="The Capital Box - About Us" />
   <meta property="og:description"
-    content="Learn more about The Capital Box, a platform offering financial insights, market trends, and investment strategies." />
+    content="Learn more about The Capital Box - your go-to platform for financial insights, market trends, and investment strategies." />
   <meta property="og:image" content="/public/assets/logo-1.png" />
-  <meta property="og:url" content="https://thecapitalbox.com/src/retirementSolutions.html" />
+  <meta property="og:url" content="https://thecapitalbox.com/src/About.html" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:title" content="The Capital Box - Retirement Solution" />
+  <meta name="twitter:title" content="The Capital Box - About Us" />
   <meta name="twitter:description"
     content="Discover who we are at The Capital Box and how we bring the latest financial news and investment strategies to you." />
   <meta name="twitter:image" content="/public/assets/logo-1.png" />
@@ -151,59 +149,66 @@
       </div>
     </div>
   </nav>
-  <!--  -->
   <main>
     <!-- Hero Section -->
     <div class="relative">
       <!-- Hero Image -->
       <div class="w-full h-screen bg-cover bg-center relative overflow-hidden">
-        <img src="/public/assets/SERVICES02.png" alt="Hero Image" class="w-full h-full object-cover" />
+        <img src="/public/assets/about-hero.png" alt="Hero Image" class="w-full h-full object-cover" />
+
         <!-- Hero Content -->
         <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
           <div class="text-center text-white px-4">
             <h1 class="text-xl md:text-4xl lg:text-6xl font-bold mb-4">
-              Retirement Solutions
+              About Us
             </h1>
           </div>
         </div>
       </div>
+
       <!-- Overlapping Cards Container -->
       <div class="container mx-auto px-4 relative -mt-16 md:-mt-32 mb-16">
         <div class="w-full">
           <!-- First Card -->
           <div
             class="w-full bg-white rounded-lg shadow-xl transform transition duration-500 hover:-translate-y-2 border-4 border-primary rounded-lg bg-white">
-            <div class="p-6 flex flex-col gap-2 md:gap-4">
+            <div class="p-6 flex flex-col gap-4 md:gap-8">
               <h2 class="text-xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
-                Plan for your Retirement with us.
+                A company with Integrity
               </h2>
-              <ul class="text-gray-600 mb-4 text-md md:text-lg font-medium list-disc list-inside">
-                <li>What do you wish to do post retirement?</li>
-                <li>Take up some social cause?</li>
-                <li>Get back to your home-town and relax?</li>
-                <li>Start a business or Spend time with your family?</li>
-              </ul>
+              <p class="text-gray-600 mb-4 text-md md:text-lg font-medium">
+                Since July 14 2016, the day we were founded, integrity has
+                been our core value. We at “The Capital Box” design personal
+                solutions to protect our clients’ unique lifestyles and offer
+                lasting peace of mind. We strive to build long-lasting
+                relationships with clients through attention to detail and
+                commitment to superior service. We provide unparalleled
+                consulting services, financial products and risk management
+                strategies to individuals, families and businesses,
+                specializing in niche markets and portfolios with complex
+                needs.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--  -->
-    <!-- Second Section -->
-    <div
+    <!-- Vision -->
+    <div id="history"
       class="w-full h-full md:w-full relative px-4 my-6 md:my-0 md:px-8 py-4 sm:text-sm md:text-xl lg:text-lg xl:text-xl">
       <div class="bg-primary w-[30vw] h-full absolute left-0 top-0 -z-10"></div>
       <div class="max-w-7xl mx-auto">
         <div class="grid md:grid-cols-2 gap-8 items-center relative">
           <!-- Image -->
           <div class="relative z-10 transform transition duration-500 hover:scale-105">
-            <img src="/public/assets/retire-02 - Copy.png" alt=""
+            <img src="/public/assets/about-sec-img.png" alt=""
               class="shadow-md w-full h-full object-cover rounded-md xl:block md:hidden lg:hidden sm:block" />
             <img srcset="
-                  /public/assets/retire-02-400w.avif 400w,
-                  /public/assets/retire-02-600w.avif 600w
-                " sizes="(max-width: 400px) 400px, (min-width: 401px) 600px" src="retire-02.png" alt="" width="800"
-              height="650" loading="lazy"
+                  /public/assets/about-section-lg-img-400w.avif 400w,
+                  /public/assets/about-section-lg-img-600w.avif 600w,
+                  /public/assets/about-section-lg-img-800w.avif 800w
+                " sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (min-width: 601px) 800px"
+              src="/public/assets/about-section-lg-img.png" alt="" width="811" height="1000" loading="lazy"
               class="shadow-md w-full h-full object-cover rounded-md xl:hidden lg:block md:block sm:hidden hidden" />
           </div>
 
@@ -216,262 +221,151 @@
 
             <!-- The actual content -->
             <p class="relative z-10 py-10 p-8 text-md md:text-2xl text-gray-900 md:text-sm lg:text-lg font-medium">
-              Whatever your vision, you must start planning today. After
-              retirement, a steady income stops, but your daily needs
-              continue. Savings alone aren’t enough; inflation gradually
-              reduces the value of money. Smart planning and investing are
-              essential for living your golden years independently and
-              comfortably.
+              We firmly believe that it all starts with having a clear vision
+              of your unique goals. With this clarity, we combine objective
+              advice and experience-led execution to bring the collective
+              vision to life. We offer every client true peace of mind. We
+              define peace of mind as a deeply rooted confidence that comes
+              from feeling in control and knowing your financial plan is built
+              on a foundation of increasing self-knowledge and awareness. It
+              is at this critical juncture – the intersection of proactive
+              planning and peace of mind – that we believe our clients have
+              the highest potential to realize their goals.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!--  -->
-    <!-- Our Expertise -->
-    <div class="container mx-auto px-4 lg:px-0 my-16">
+    <div class="container mx-auto px-4 md:px-0 my-16">
       <div class="w-full">
         <!-- First Card -->
         <div
-          class="w-full px-4 py-8 bg-white rounded-lg shadow-xl transform transition duration-500 hover:-translate-y-2 border-4 border-primary rounded-lg bg-white">
-          <h1 class="text-3xl font-bold">Our Expertise:</h1>
-          <p class="text-lg mt-4 text-gray-700 font-medium">
-            At TCB, we believe financial planning begins with a clear vision
-            of your unique goals. We combine objective advice and expert
-            execution to bring your dreams to life. We offer true peace of
-            mind — helping you stay in control and confident that your
-            financial future is secure.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--  -->
-    <div
-      class="w-full h-full md:w-full relative px-4 my-6 md:my-16 md:px-8 py-4 sm:text-sm md:text-xl lg:text-lg xl:text-xl">
-      <div class="bg-primary z-2 w-[30vw] h-full absolute right-0 top-0 -z-10"></div>
-      <div class="max-w-7xl mx-auto">
-        <div class="md:grid md:grid-cols-2 gap-8 items-center relative flex flex-col-reverse md:flex-row">
-          <!-- Text Content with border that extends behind the image -->
-          <div class="relative">
-            <!-- The actual content -->
-            <p class="relative z-10 py-10 p-8 text-md md:text-2xl text-gray-900 md:text-sm lg:text-lg font-medium">
-              Our mission is to understand your values, empower you through
-              education and tools, and help you define your ambitions clearly.
-              We take the stress out of financial management, so you can enjoy
-              life’s journey and fulfill your unique purpose. We are your calm
-              guide, navigating you through the uncertainties of financial
-              planning and helping you build a future full of possibilities.
+          class="w-full bg-white rounded-lg shadow-xl transform transition duration-500 hover:-translate-y-2 border-4 border-primary rounded-lg bg-white">
+          <div class="p-6">
+            <p class="text-gray-600 mb-4 text-md md:text-lg font-medium">
+              Our vision as a firm focuses on helping others achieve financial
+              goals, as well as understanding of each client’s unique purpose,
+              mission and values. We strive to empower clients by offering
+              education, tools and resources aimed at facilitating clear
+              communication and bringing definition to their ambitions and
+              objectives. Each client has different ideas about what makes
+              life great. We take the burden out of managing the financial
+              details so clients can enjoy life’s journey and live out their
+              unique purpose. We strive to be a force of calm, a navigator in
+              the face of anxiety and uncertainty that all too often accompany
+              financial success.
             </p>
-            <!-- Border that extends behind the image -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- consultation -->
+    <section class="consultation-section my-16">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Left Container with Image and Yellow Overlay -->
+          <div class="w-full md:w-1/2 relative">
+            <img src="/public/assets/consultation-img.png" alt="Financial consultation"
+              class="w-full h-full object-cover hidden md:block" />
+            <img
+              src="https://st2.depositphotos.com/1158045/10108/i/950/depositphotos_101089198-stock-photo-businessman-in-front-of-modern.jpg"
+              alt="Financial consultation" class="w-full h-full object-cover md:hidden" />
             <div
-              class="absolute top-0 bottom-0 left-0 md:-right-24 lg:-right-32 right-0 border-4 border-primary rounded-md -z-5">
+              class="absolute inset-0 bg-[#CBBA4F] bg-opacity-80 m-4 transform transition duration-500 hover:scale-[1.02]">
+              <div class="p-4 md:p-8 h-full flex flex-col justify-center items-center">
+                <h2 class="text-xl md:text-3xl font-bold text-black mb-6">
+                  We Can Help you address:
+                </h2>
+                <ul class="text-black space-y-3 text-sm md:text-lg">
+                  <li class="flex items-start">
+                    <span class="mr-2 font-bold">•</span>
+                    <span>Investing principles and strategies</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2 font-bold">•</span>
+                    <span>Retirement investing and distribution strategies</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2 font-bold">•</span>
+                    <span>Estate conservation issues</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2 font-bold">•</span>
+                    <span>Risk management analysis</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- Image -->
-          <div class="relative z-10 transform transition duration-500 hover:scale-105">
-            <img src="/public/assets/retire-04 - Copy.png" alt=""
-              class="shadow-md w-full h-full object-cover rounded-md xl:block md:hidden lg:hidden sm:block" />
-            <img srcset="
-                  /public/assets/retire-04-400w.avif 400w,
-                  /public/assets/retire-04-600w.avif 600w
-                " sizes="(max-width: 400px) 400px, (min-width: 401px) 600px" src="retire-04.png" alt="" width="800"
-              height="800" loading="lazy"
-              class="shadow-md w-full h-full object-cover rounded-md xl:hidden lg:block md:block sm:hidden hidden" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  -->
-    <!-- We can help you address -->
-    <div
-      class="w-full h-full md:w-full relative px-4 my-6 md:my-16 md:px-8 py-4 sm:text-sm md:text-xl lg:text-lg xl:text-xl">
-      <div class="bg-primary w-[30vw] h-full absolute left-0 top-0 -z-10"></div>
-      <div class="max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8 items-center relative">
-          <!-- Image -->
-          <div class="relative z-10 transform transition duration-500 hover:scale-105">
-            <img src="/public/assets/retire-03 - Copy.png" alt=""
-              class="shadow-md w-full h-full object-cover rounded-md xl:block md:hidden lg:hidden sm:block" />
-            <img srcset="
-                  /public/assets/retire-03-400w.avif 400w,
-                  /public/assets/retire-03-600w.avif 600w
-                " sizes="(max-width: 400px) 400px, (min-width: 401px) 600px" src="retire-03.png" alt="" width="800"
-              height="650" loading="lazy"
-              class="shadow-md w-full h-full object-cover rounded-md xl:hidden lg:block md:block sm:hidden hidden" />
-          </div>
 
-          <!-- Text Content with border that extends behind the image -->
-          <div class="relative">
-            <!-- Border that extends behind the image -->
-            <div
-              class="absolute top-0 bottom-0 -left-16 md:-left-24 lg:-left-32 right-0 border-4 border-primary rounded-md -z-5">
-            </div>
+          <!-- Right Container with Consultation Options -->
+          <div class="w-full md:w-1/2">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Consultations</h2>
+            <div class="consultation-accordion">
+              <!-- Option 1 -->
+              <div class="border-b border-gray-300">
+                <button
+                  class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
+                  onclick="togglePopup('taxation')">
+                  <span class="text-lg">Taxation</span>
+                  <span class="text-xl">></span>
+                </button>
+              </div>
 
-            <div class="relative z-10 p-6 flex flex-col gap-2 md:gap-4">
-              <h1 class="text-2xl font-bold">We Can Help you address:</h1>
-              <ul class="text-md md:text-lg mt-4 text-gray-700 font-medium list-disc list-inside flex flex-col gap-3">
-                <li>Investing principles and strategies</li>
-                <li>Retirement investing and distribution strategies</li>
-                <li>Estate conservation issues</li>
-                <li>Risk management analysis</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  -->
-    <!-- Need of Retirement Planning -->
-    <div class="container mx-auto px-4 xl:px-0 my-16">
-      <div class="w-full">
-        <!-- First Card -->
-        <div
-          class="w-full px-4 py-8 bg-white rounded-lg shadow-xl transform transition duration-500 hover:-translate-y-2 border-4 border-primary rounded-lg bg-white">
-          <h1 class="text-xl md:text-3xl font-bold">
-            Why Do You Need Retirement Planning?
-          </h1>
-          <p class="text-md md:text-lg mt-4 text-gray-700 font-medium">
-            Retirement planning isn't just about saving money — it's about
-            securing your future lifestyle, managing risks, and achieving your
-            dreams after you stop working. With a structured plan, you gain
-            control over your cash flows, earnings, expenses, and understand
-            the level of risk needed to meet your goals.
-          </p>
-          <p class="text-md md:text-lg mt-4 text-gray-700 font-medium">
-            While it’s easy to cover expenses during your earning years, after
-            retirement, you must rely on your savings. Without proper
-            planning, maintaining your lifestyle can become a challenge.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--  -->
-    <!-- Retirement Planning & Consultaions -->
-    <div class="container mx-auto px-4 my-16">
-      <div class="w-full flex flex-col md:flex-row gap-8">
-        <!-- First Card -->
-        <div
-          class="w-full md:w-1/2 px-4 md:px-8 py-8 bg-white rounded-lg shadow-xl transform transition duration-500 hover:-translate-y-2 border-4 border-primary rounded-lg bg-white">
-          <h1 class="text-xl lg:text-3xl font-bold">
-            Here’s why retirement planning is essential:
-          </h1>
-          <ol class="text-md md:text-lg mt-4 text-gray-700 font-medium list-decimal list-inside flex flex-col gap-4">
-            <div>
-              <li onclick="dropDescription(this)" class="cursor-pointer">
-                To Cover Daily Living Expenses
-              </li>
-              <p class="text-sm md:text-md mt-2 mx-2 md:mx-4 p-2 md:p-4 text-gray-700 font-medium bg-primary/30 hidden">
-                Life doesn’t stop after retirement, and neither do expenses.
-                Without a regular salary, having a retirement corpus ensures
-                your family’s standard of living remains uncompromised.
-              </p>
-            </div>
-            <div>
-              <li onclick="dropDescription(this)" class="cursor-pointer">
-                To Manage Medical Expenses
-              </li>
-              <p class="text-sm md:text-md mt-2 mx-2 md:mx-4 p-2 text-gray-700 font-medium bg-primary/30 hidden">
-                As you age, health issues become more common — and expensive.
-                While health insurance helps, it may not cover everything.
-              </p>
-            </div>
-            <div>
-              <li onclick="dropDescription(this)" class="cursor-pointer">
-                To Fight Inflation
-              </li>
-              <p class="text-sm md:text-md mt-2 mx-2 md:mx-4 p-2 text-gray-700 font-medium bg-primary/30 hidden">
-                Prices of goods and services continuously rise. Without
-                planning, your money’s value will erode over time.
-              </p>
-            </div>
-            <div>
-              <li onclick="dropDescription(this)" class="cursor-pointer">
-                To Handle Uncertainties
-              </li>
-              <p class="text-sm md:text-md mt-2 mx-2 md:mx-4 p-2 text-gray-700 font-medium bg-primary/30 hidden">
-                Life is unpredictable. Natural disasters, loss of loved ones,
-                or financial hardships can strike anytime.
-              </p>
-            </div>
+              <!-- Option 2 -->
+              <div class="border-b border-gray-300">
+                <button
+                  class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
+                  onclick="togglePopup('business')">
+                  <span class="text-lg">Business Tax</span>
+                  <span class="text-xl">></span>
+                </button>
+              </div>
 
-            <div>
-              <li onclick="dropDescription(this)" class="cursor-pointer">
-                To Achieve Retirement Dreams
-              </li>
-              <p class="text-sm md:text-md mt-2 mx-2 md:mx-4 p-2 text-gray-700 font-medium bg-primary/30 hidden">
-                Whether it’s traveling the world, pursuing hobbies, or simply
-                living stress-free, your retirement dreams need funding.
-              </p>
-            </div>
-          </ol>
-        </div>
-        <!--  -->
-        <!-- Right Container with Consultation Options -->
-        <div class="w-full md:w-1/2">
-          <h2 class="text-2xl md:text-3xl font-bold mb-6">Consultations</h2>
-          <div class="consultation-accordion">
-            <!-- Option 1 -->
-            <div class="border-b border-gray-300">
-              <button
-                class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
-                onclick="togglePopup('taxation')">
-                <span class="text-lg">Taxation</span>
-                <span class="text-xl">></span>
-              </button>
-            </div>
+              <!-- Option 3 -->
+              <div class="border-b border-gray-300">
+                <button
+                  class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
+                  onclick="togglePopup('personal')">
+                  <span class="text-lg">Personal Funds</span>
+                  <span class="text-xl">></span>
+                </button>
+              </div>
 
-            <!-- Option 2 -->
-            <div class="border-b border-gray-300">
-              <button
-                class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
-                onclick="togglePopup('business')">
-                <span class="text-lg">Business Tax</span>
-                <span class="text-xl">></span>
-              </button>
-            </div>
+              <!-- Option 4 -->
+              <div class="border-b border-gray-300">
+                <button
+                  class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
+                  onclick="togglePopup('insurance')">
+                  <span class="text-lg">Insurance</span>
+                  <span class="text-xl">></span>
+                </button>
+              </div>
 
-            <!-- Option 3 -->
-            <div class="border-b border-gray-300">
-              <button
-                class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
-                onclick="togglePopup('personal')">
-                <span class="text-lg">Personal Funds</span>
-                <span class="text-xl">></span>
-              </button>
-            </div>
+              <!-- Option 5 -->
+              <div class="border-b border-gray-300">
+                <button
+                  class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
+                  onclick="togglePopup('mutual')">
+                  <span class="text-lg">Mutual Funds</span>
+                  <span class="text-xl">></span>
+                </button>
+              </div>
 
-            <!-- Option 4 -->
-            <div class="border-b border-gray-300">
-              <button
-                class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
-                onclick="togglePopup('insurance')">
-                <span class="text-lg">Insurance</span>
-                <span class="text-xl">></span>
-              </button>
-            </div>
-
-            <!-- Option 5 -->
-            <div class="border-b border-gray-300">
-              <button
-                class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
-                onclick="togglePopup('mutual')">
-                <span class="text-lg">Mutual Funds</span>
-                <span class="text-xl">></span>
-              </button>
-            </div>
-
-            <!-- Option 6 -->
-            <div class="border-b border-gray-300">
-              <button
-                class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
-                onclick="togglePopup('sips')">
-                <span class="text-lg">SIPs</span>
-                <span class="text-xl">></span>
-              </button>
+              <!-- Option 6 -->
+              <div class="border-b border-gray-300">
+                <button
+                  class="w-full py-4 px-2 flex justify-between items-center text-left transform transition duration-500 hover:-translate-y-2 hover:font-medium hover:text-primary"
+                  onclick="togglePopup('sips')">
+                  <span class="text-lg">SIPs</span>
+                  <span class="text-xl">></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Popup containers (hidden by default) -->
       <!-- taxation -->
       <div id="taxation" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
@@ -740,38 +634,105 @@
           </ul>
         </div>
       </div>
-    </div>
-    <!--  -->
-    <!-- Plan today relax tommorow -->
-    <section class="consultation-section my-16">
-      <div class="container mx-auto px-4">
-        <div class="h-full">
-          <!-- Left Container with Image and Yellow Overlay -->
-          <div class="w-full relative">
-            <img src="/public/assets/retire-05.png" alt="Financial consultation"
-              class="w-full h-full object-cover hidden md:block" />
-            <img src="/public/assets/tax-05.png" alt="Financial consultation"
-              class="w-full h-full object-cover hidden md:hidden" />
-            <div
-              class="md:absolute md:inset-0 bg-[#CBBA4F] bg-opacity-80 m-4 md:m-8 transform transition duration-500 hover:scale-[1.02]">
-              <div
-                class="p-4 md:p-8 h-full flex flex-col justify-center items-center gap-4 max-w-7xl mx-auto overflow-y-auto">
-                <h2 class="text-lg md:text-3xl font-bold text-black mb-3 md:mb-6 text-center">
-                  Plan Today, Relax Tomorrow!
-                </h2>
-                <p class="text-md md:text-lg text-gray-700 font-medium mb-4 text-center md:text-start">
-                  Our experienced professionals have guided many individuals
-                  like you to create customized retirement plans. Let us help
-                  you build a strategy tailored to your unique needs, ensuring
-                  a secure and fulfilling retirement.
-                </p>
-                <h2 class="text-xl md:text-3xl font-bold text-black mb-6 text-center">
-                  Contact us today to start your retirement journey!
-                </h2>
-              </div>
-            </div>
-          </div>
+    </section>
+    <!-- questions -->
+    <section class="container mx-auto px-4 my-16">
+      <h1 class="text-2xl md:text-3xl font-bold mb-6">
+        We also can answer your questions, including:
+      </h1>
+      <ul class="list-disc pl-5 text-md md:text-xl">
+        <div>
+          <li class="mb-2 transform transition duration-200 hover:text-primary cursor-pointer font-medium"
+            onclick="dropDescription(this)">
+            Can I retire early?
+          </li>
+          <p class="text-gray-600 mb-4 text-md md:text-lg font-medium hidden">
+            This depends on your current savings, income sources, and
+            financial goals. We can help analyze your plan.
+          </p>
         </div>
+        <div>
+          <li class="mb-2 transform transition duration-200 hover:text-primary cursor-pointer font-medium"
+            onclick="dropDescription(this)">
+            Are my investments working hard enough?
+          </li>
+          <p class="text-gray-600 mb-4 text-md md:text-lg font-medium hidden">
+            We'll review your portfolio performance and suggest optimizations
+            if needed.
+          </p>
+        </div>
+
+        <div>
+          <li class="mb-2 transform transition duration-200 hover:text-primary cursor-pointer font-medium"
+            onclick="dropDescription(this)">
+            What’s a good approach for college savings?
+          </li>
+          <p class="text-gray-600 mb-4 text-md md:text-lg font-medium hidden">
+            Options like 529 plans, custodial accounts, and more—we'll tailor
+            a solution to your family's needs.
+          </p>
+        </div>
+        <div>
+          <li class="mb-2 transform transition duration-200 hover:text-primary cursor-pointer font-medium"
+            onclick="dropDescription(this)">
+            How do I choose the right investment strategy?
+          </li>
+          <p class="text-gray-600 mb-4 text-md md:text-lg font-medium hidden">
+            We'll assess your risk tolerance and financial goals to create a
+            personalized investment plan.
+          </p>
+        </div>
+        <div>
+          <li class="mb-2 transform transition duration-200 hover:text-primary cursor-pointer font-medium"
+            onclick="dropDescription(this)">
+            What are the elements of a sound estate strategy?
+          </li>
+          <p class="text-gray-600 mb-4 text-md md:text-lg font-medium hidden">
+            It includes wills, trusts, beneficiary designations, powers of
+            attorney, and tax planning.
+          </p>
+        </div>
+        <div>
+          <li class="mb-2 transform transition duration-200 hover:text-primary cursor-pointer font-medium"
+            onclick="dropDescription(this)">
+            Do I have enough life insurance for my family?
+          </li>
+          <p class="text-gray-600 mb-4 text-md md:text-lg font-medium hidden">
+            We'll calculate your needs based on income, debts, education, and future family expenses.
+          </p>
+        </div>
+      </ul>
+      <p class="mt-4 font-normal text-lg md:text-2xl">
+        Our experienced professionals have helped many people just like you
+        with similar issues and concerns. We can help you create an approach
+        that is designed to address your individual situation.
+      </p>
+    </section>
+    <!-- Testimonial -->
+    <section class="container mx-auto px-4 my-16">
+      <div class="text-center uppercase relative mb-8 text-2xl md:text-4xl font-bold">
+        STAR PERFORMER's
+      </div>
+
+      <div class="carousel flex items-center justify-center w-full h-96 relative">
+        <ul class="carousel__list flex relative w-full justify-center items-center list-none p-0">
+          <li class="carousel__item max-w-md md:w-lg h-96 rounded-xl shadow-lg overflow-hidden cursor-pointer"
+            data-pos="-2">
+            <img src="/public/assets/card-1.png" alt="Image 1" class="w-full h-full object-cover" />
+          </li>
+          <li class="carousel__item w-lg h-96 rounded-xl shadow-lg overflow-hidden cursor-pointer" data-pos="-1">
+            <img src="/public/assets/card-2.png" alt="Image 2" class="w-full h-full object-cover" />
+          </li>
+          <li class="carousel__item w-lg h-96 rounded-xl shadow-lg overflow-hidden cursor-pointer" data-pos="0">
+            <img src="/public/assets/card-3.png" alt="Image 3" class="w-full h-full object-cover" />
+          </li>
+          <li class="carousel__item w-lg h-96 rounded-xl shadow-lg overflow-hidden cursor-pointer" data-pos="1">
+            <img src="/public/assets/card-1.png" alt="Image 4" class="w-full h-full object-cover" />
+          </li>
+          <li class="carousel__item w-lg h-96 rounded-xl shadow-lg overflow-hidden cursor-pointer" data-pos="2">
+            <img src="/public/assets/card-2.png" alt="Image 5" class="w-full h-full object-cover" />
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -1033,11 +994,12 @@
     });
   </script>
   <!-- Privacy Policy End -->
-  <script src="../src/js/main.js"></script>
-  <script src="../src/js/navbar.js"></script>
-  <script src="../src/js/togglePopup.js"></script>
-  <script src="../src/js/dropDescription.js"></script>
-  <script src="../src/js/loading.js"></script>
+  <script src="/main.js"></script>
+  <script src="/navbar.js"></script>
+  <script src="/togglePopup.js"></script>
+  <script src="/dropDescription.js"></script>
+  <script src="/loading.js"></script>
+
 </body>
 
 </html>
