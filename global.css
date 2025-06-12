@@ -11,6 +11,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Dropdown menu hidden by default */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -18,14 +19,76 @@ body {
   z-index: 50;
 }
 
+/* Hero section default styles */
 .hero-section {
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+.hero-section {
+  scroll-padding-top: 80px;
+}
+
+/* Hero section adjustments: Desktop */
+@media (min-width: 1024px) {
+  .hero-section {
+    padding-top: 90px;
+    flex-direction: row;
+  }
+  .hero-section > .relative.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+  .hero-section > .relative.lg\:w-1\/2 {
+    width: 100% !important;
+  }
+  .hero-section .max-w-2xl {
+    margin-inline: auto;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .hero-section {
+    padding-top: 90px;
+  }
+  .hero-section > .relative.lg\:w-1\/2 {
+    width: 100% !important;
+  }
+  .hero-section h1 {
+    font-size: 2rem !important;
+  }
+  .hero-section .max-w-2xl {
+    margin-inline: auto;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Edge case for screen width 1024-1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .hero-section {
+    padding-top: 60px !important;
+  }
+  .hero-section > .relative.container {
+    padding-top: 2rem !important;
+  }
+}
+
+/* Carousel Styles */
 .carousel__item {
   transition: all 0.3s ease-in;
   position: absolute;
@@ -39,36 +102,31 @@ body {
 .carousel__item[data-pos="1"] {
   opacity: 0.7;
   filter: blur(1px) grayscale(10%);
-}
-
-.carousel__item[data-pos="-1"] {
-  transform: translateX(-40%) scale(0.9);
   z-index: 4;
+  transform: translateX(-40%) scale(0.9);
 }
 
 .carousel__item[data-pos="1"] {
   transform: translateX(40%) scale(0.9);
-  z-index: 4;
 }
 
 .carousel__item[data-pos="-2"],
 .carousel__item[data-pos="2"] {
   opacity: 0.4;
   filter: blur(3px) grayscale(20%);
+  z-index: 3;
 }
 
 .carousel__item[data-pos="-2"] {
   transform: translateX(-70%) scale(0.8);
-  z-index: 3;
 }
 
 .carousel__item[data-pos="2"] {
   transform: translateX(70%) scale(0.8);
-  z-index: 3;
 }
 
+/* Hide carousel side items on small screens */
 @media (max-width: 640px) {
-
   .carousel__item[data-pos="-2"],
   .carousel__item[data-pos="-1"],
   .carousel__item[data-pos="1"],
@@ -77,14 +135,9 @@ body {
     transform: none;
     filter: none;
   }
-
-  .carousel__item[data-pos="0"] {
-    transform: none;
-    filter: none;
-    opacity: 1;
-  }
 }
 
+/* Utilities */
 .gold-bg {
   background-color: #d4bc5c;
 }
@@ -93,6 +146,7 @@ body {
   color: #d4bc5c;
 }
 
+/* Service card */
 .service-card {
   border-radius: 12px;
   background-color: white;
@@ -101,15 +155,18 @@ body {
   z-index: 10;
 }
 
+/* Yellow blob shape */
 .yellow-blob {
   position: absolute;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
+/* Overlapping section */
 .section-overlap {
   margin-top: -10rem;
 }
 
+/* Flip card styles */
 .flip-card {
   perspective: 1000px;
   transform-style: preserve-3d;
@@ -128,30 +185,19 @@ body {
 .flip-card-back {
   backface-visibility: hidden;
   min-height: 20rem;
-  /* Minimum height equivalent to h-80 */
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
 }
 
+/* Gradient background */
 .gradient-bg {
-  /* #CBBA4F create linear gradient of this */
-  background: #cbba4f;
+  background: linear-gradient(to right, #cbba4f, #e2d77a);
 }
 
-.quote-icon {
-  font-size: 1.75rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  opacity: 0.2;
-}
-
-.testimonial-gradient-bg {
-  background: #cbba4f;
-}
-
+/* Quote icon */
+.quote-icon,
 .testimonial-quote-icon {
   font-size: 1.75rem;
   position: absolute;
@@ -160,7 +206,7 @@ body {
   opacity: 0.2;
 }
 
-/* Loading Spinner Styles */
+/* Spinner */
 .loader {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #CBBA4F;
@@ -177,6 +223,80 @@ body {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* Button responsiveness */
+@media (max-width: 767px) {
+  .hero-section a.inline-block {
+    width: 100%;
+    text-align: center;
+    display: block !important;
+    margin-inline: auto;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section a.inline-block {
+    display: inline-block;
+    width: auto;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section a.inline-block {
+    font-size: 1.125rem;
+  }
+}
+
+/* Reduce spacing between navbar and hero section */
+.hero-section {
+  padding-top: 60px !important; /* Reduced base padding */
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 60px !important; /* Reduced for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding-top: 60px !important; /* Reduced for desktop */
+  }
+}
+
+/* Fix service box container spacing */
+.hero-section > .relative.z-10.w-full.lg\:w-1\/2,
+.service-box-container {
+  padding-top: 0 !important;
+}
+
+@media (min-width: 1024px) {
+  .hero-section > .relative.z-10.w-full.lg\:w-1\/2,
+  .service-box-container {
+    padding-top: 0rem !important;
+  }
+}
+
+/* Edge case for screen width 1024-1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .hero-section {
+    padding-top: 60px !important; /* Consistent with desktop */
+  }
+  
+  .hero-section > .relative.container {
+    padding-top: 1rem !important; /* Reduced padding */
+  }
+  
+  /* Adjust service box container */
+  .hero-section > .relative.z-10.w-full.lg\:w-1\/2,
+  .service-box-container {
+    padding-top: 0 !important;
   }
 }
 

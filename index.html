@@ -140,8 +140,7 @@
   </nav>
   <main>
     <!-- Hero Section -->
-    <div
-      class="hero-section relative w-full flex flex-col lg:flex-row items-center min-h-screen lg:h-screen pt-20 md:pt-24"
+    <div class="hero-section relative w-full flex flex-col lg:flex-row items-center min-h-screen lg:h-screen lg:pt-32"
       style="
           background-image: url('public/assets/hero-img.png');
           background-size: cover;
@@ -164,11 +163,13 @@
             goals, our services have provided them with time they can enjoy
             with their family without getting worried.
           </p>
-          <a href="./contactUs.html"
-            class="inline-block bg-primary text-white px-6 py-3 md:px-8 md:py-4 rounded-md font-medium hover:bg-gray-200 transition hover:text-primary hover:font-normal text-center md:text-left"
-            style="font-weight: bold;">
-            Get Finance Advice &gt;
-          </a>
+          <div class="mb-8 md:mb-12 lg:mb-8">
+            <a href="./contactUs.html"
+              class="inline-block bg-primary text-white px-6 py-3 md:px-8 md:py-4 rounded-md font-medium hover:bg-gray-200 transition hover:text-primary hover:font-normal text-center md:text-left"
+              style="font-weight: bold;">
+              Get Finance Advice &gt;
+            </a>
+          </div>
         </div>
       </div>
       <!-- Right: Responsive Service Box -->
@@ -248,86 +249,6 @@
         </div>
       </div>
     </div>
-    <style>
-      /* Make hero-section stack and adjust min-height/padding for mobile */
-      @media (max-width: 1023px) {
-        .hero-section {
-          flex-direction: column;
-          min-height: 70vh;
-          height: auto;
-          padding-top: 80px;
-          padding-bottom: 0;
-        }
-
-
-        .hero-section .container {
-          padding-top: 2rem;
-          padding-bottom: 2rem;
-        }
-
-        .hero-section>.relative.lg\:w-1\/2 {
-          width: 100% !important;
-          padding-right: 0 !important;
-        }
-
-        .hero-section>.relative.z-10.w-full {
-          padding-right: 0 !important;
-        }
-      }
-
-      /* Make sure right-side box doesn't overflow and centers on small screens */
-      @media (max-width: 767px) {
-        .hero-section {
-          min-height: 60vh;
-          height: auto;
-        }
-
-        .hero-section .container {
-          padding-top: 1.5rem;
-          padding-bottom: 1.5rem;
-        }
-
-        .hero-section .max-w-2xl {
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
-
-      /* Remove side paddings for hero-section at very small widths */
-      @media (max-width: 480px) {
-        .hero-section .container {
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
-        }
-
-        .hero-section>.relative.z-10.w-full {
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-        }
-      }
-
-      /* Responsive text scaling for hero-section */
-      @media (max-width: 640px) {
-        .hero-section h1 {
-          font-size: 2rem !important;
-        }
-
-        .hero-section p {
-          font-size: 1rem !important;
-        }
-      }
-
-      /* Ensure buttons and links are full-width on mobile for easier tap targets */
-      @media (max-width: 640px) {
-        .hero-section a.inline-block {
-          width: 100%;
-          text-align: center;
-          display: block !important;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    </style>
     <!-- End of Hero Section -->
     <!-- Services Why select us Section -->
     <div class="w-full h-full md:w-full relative py-4 sm:text-sm md:text-xl lg:text-lg xl:text-xl">
