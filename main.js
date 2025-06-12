@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load external HTML files into specific elements
   // loadHTML("/src/components/navbar.html", "navbar");
   // loadHTML("/src/components/footer.html", "footer");
-  carousel(); // Call the carousel function when the DOM is fully loaded
-  togglePopup(); // Call the togglePopup function when the DOM is fully loaded
-  dropDescription(); // Call the dropDescription function when the DOM is fully loaded
+  
 });
 // Debounce function to limit how often a function can be called
 function debounce(func, wait) {
