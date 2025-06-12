@@ -1,0 +1,37 @@
+{
+    "framework": null,
+    "buildCommand": "",
+    "rewrites": [
+      { "source": "/", "destination": "/src/index.html" },
+      { "source": "/about", "destination": "/src/About.html" },
+      { "source": "/contact", "destination": "/html/new_contactUs.html" },
+      { "source": "/product&services", "destination": "/html/new_product&service.html" },
+      {"source": "/career", "destination": "/html/new_career.html"},
+      {"source": "/learn", "destination": "/html/learn.html"},
+      {"source": "/claim", "destination": "/html/Claim1.html"},
+      {"source": "/healthcare", "destination": "/html/new_healthcare.html"},
+      {"source": "/calculator", "destination": "/html/Calculator-Menu.html"},
+      {"source":"/insurance", "destination":"/html/insurance.html"},
+      {"source":"/investment-solutions","destination":"/html/Customized_Investment.html"},
+      {"source":"/income-tax-calculator","destination":"/html/calulators/incomeTaxCalculator.html"},
+      {"source":"/tax-saving-calculator","destination":"/html/calulators/taxSaving.html"},
+      {"source":"/sip-calculator","destination":"/html/calulators/sipCalculator.html"},
+      {"source":"/retirement-calculator","destination":"/html/calulators/retirementCalculator.html"},
+      {"source":"/ppf-calculator","destination":"/html/calulators/ppfCalculator.html"},
+      {"source":"/pf-calculator","destination":"/html/calulators/PFCalculator.html"},
+      {"source":"/mutual-fund-calculator","destination":"/html/calulators/mutualFund.html"},
+      {"source":"/emi-calculator","destination":"/html/calulators/emiCalculator.html"},
+      {"source":"/fd-calculator","destination":"/html/calulators/FDCalculator.html"},
+      {"source":"/gst-calculator","destination":"/html/calulators/GSTCalculator.html"},
+      {"source":"/child-education","destination":"/html/LearnPageForms/childEducation.html"},
+      {"source":"/custom-dream","destination":"/html/LearnPageForms/customDream.html"},
+      {"source":"/destination-wedding","destination":"/html/LearnPageForms/destinationWedding.html"},
+      {"source":"/dream-car","destination":"/html/LearnPageForms/dreamCar.html"},
+      {"source":"/dream-home","destination":"/html/LearnPageForms/dreamHome.html"},
+      {"source":"/dream-vacation","destination":"/html/LearnPageForms/dreamHoliday.html"},
+      {"source":"/retirement","destination":"/html/LearnPageForms/retirement.html"},
+      {"source":"/wealth-builder","destination":"/html/LearnPageForms/wealthBuilder.html"},
+      {"source": "/(.*)", "destination": "/html/404.html"}
+    ]
+  }
+  
