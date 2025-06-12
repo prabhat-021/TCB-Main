@@ -1,30 +1,260 @@
-// document.getElementById("btn").addEventListener("click", () => {
-//   alert("Button clicked!");
+// // document.getElementById("btn").addEventListener("click", () => {
+// //   alert("Button clicked!");
+// // });
+
+// // DOMContentLoaded event listener
+// document.addEventListener("DOMContentLoaded", () => {
+//   navbar(); // Call the navbar function when the DOM is fully loaded
+//   // Load external HTML files into specific elements
+//   // loadHTML("/src/components/navbar.html", "navbar");
+//   // loadHTML("/src/components/footer.html", "footer");
+//   carousel(); // Call the carousel function when the DOM is fully loaded
+
 // });
+// // Debounce function to limit how often a function can be called
+// function debounce(func, wait) {
+//   let timeout;
+//   return function executedFunction(...args) {
+//     const later = () => {
+//       clearTimeout(timeout);
+//       func(...args);
+//     };
+//     clearTimeout(timeout);
+//     timeout = setTimeout(later, wait);
+//   };
+// }
 
-// DOMContentLoaded event listener
-document.addEventListener("DOMContentLoaded", () => {
-  navbar(); // Call the navbar function when the DOM is fully loaded
-  // Load external HTML files into specific elements
-  // loadHTML("/src/components/navbar.html", "navbar");
-  // loadHTML("/src/components/footer.html", "footer");
-  carousel(); // Call the carousel function when the DOM is fully loaded
+// // Handle hash-based scrolling
+// function handleHashScroll() {
+//   const hash = window.location.hash;
+//   if (hash) {
+//     const targetElement = document.querySelector(hash);
+//     if (targetElement) {
+//       const navbarHeight = 80;
+//       const elementPosition = targetElement.getBoundingClientRect().top;
+//       const offsetPosition =
+//         elementPosition + window.pageYOffset - navbarHeight;
 
+//       window.scrollTo({
+//         top: offsetPosition,
+//         behavior: "smooth",
+//       });
+//     }
+//   }
+// }
+
+// // Initialize the application
+// function init() {
+//   // Handle initial hash scroll
+//   handleHashScroll();
+
+//   // Handle hash changes
+//   window.addEventListener("hashchange", handleHashScroll);
+
+//   // Optimize scroll performance
+//   window.addEventListener(
+//     "scroll",
+//     debounce(() => {
+//       // Add any scroll-based optimizations here
+//     }, 100)
+//   );
+// }
+
+// // Wait for DOM to be fully loaded
+// if (document.readyState === "loading") {
+//   document.addEventListener("DOMContentLoaded", init);
+// } else {
+//   init();
+// }
+
+
+
+
+
+// -------------------------------------------
+// Loading Spinner: Hides loader when page finishes loading
+// -------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const spinner = document.getElementById("loading-spinner");
+  window.addEventListener("load", function () {
+    spinner.style.display = "none";
+  });
 });
-// Debounce function to limit how often a function can be called
+
+// -------------------------------------------
+// Navbar Toggle + Mobile & Desktop Dropdown
+// -------------------------------------------
+function navbar() {
+  const navbar = document.getElementById("navbar");
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const closeIcon = document.getElementById("close-icon");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+
+  // Change navbar background on scroll
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-navColor");
+    } else {
+      if (mobileMenu.classList.contains("hidden")) {
+        navbar.classList.remove("bg-navColor");
+      }
+    }
+  });
+
+  // Toggle mobile menu
+  mobileMenuButton.addEventListener("click", function (e) {
+    e.stopPropagation();
+    mobileMenu.classList.toggle("hidden");
+
+    if (!mobileMenu.classList.contains("hidden")) {
+      navbar.classList.add("bg-navColor");
+    } else if (window.scrollY === 0) {
+      navbar.classList.remove("bg-navColor");
+    }
+
+    hamburgerIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+
+  // Close menu on clicking outside or on link
+  document.addEventListener("click", function (e) {
+    const isClickInsideMenu = mobileMenu.contains(e.target);
+    const isClickOnButton = mobileMenuButton.contains(e.target);
+    const isClickOnLink = e.target.closest(".mobile-menu-link");
+
+    if (
+      !isClickInsideMenu &&
+      !isClickOnButton &&
+      !mobileMenu.classList.contains("hidden")
+    ) {
+      mobileMenu.classList.add("hidden");
+      if (window.scrollY === 0) navbar.classList.remove("bg-navColor");
+      hamburgerIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+    }
+
+    if (isClickOnLink) {
+      mobileMenu.classList.add("hidden");
+      if (window.scrollY === 0) navbar.classList.remove("bg-navColor");
+      hamburgerIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+    }
+  });
+
+  // Mobile dropdown
+  const mobileDropdownButton = document.getElementById("mobile-dropdown-button");
+  const mobileDropdown = document.getElementById("mobile-dropdown");
+  mobileDropdownButton?.addEventListener("click", function () {
+    mobileDropdown.classList.toggle("hidden");
+  });
+
+  // Desktop dropdown
+  const toggleButton = document.getElementById("dropdownToggle");
+  const dropdownMenu = toggleButton?.nextElementSibling;
+
+  toggleButton?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isVisible = getComputedStyle(dropdownMenu).display === "block";
+    dropdownMenu.style.display = isVisible ? "none" : "block";
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!toggleButton?.contains(e.target) && !dropdownMenu?.contains(e.target)) {
+      dropdownMenu.style.display = "none";
+    }
+  });
+}
+
+// -------------------------------------------
+// Carousel functionality with auto-rotation
+// -------------------------------------------
+function carousel() {
+  const carouselList = document.querySelector(".carousel__list");
+  const carouselItems = document.querySelectorAll(".carousel__item");
+  const elems = Array.from(carouselItems);
+
+  carouselList?.addEventListener("click", function (event) {
+    const newActive = event.target.closest(".carousel__item");
+    if (!newActive) return;
+    update(newActive);
+  });
+
+  const update = function (newActive) {
+    const newActivePos = parseInt(newActive.dataset.pos);
+    if (newActivePos === 0) return;
+    elems.forEach((item) => {
+      const itemPos = parseInt(item.dataset.pos);
+      item.dataset.pos = getPos(itemPos, newActivePos);
+    });
+  };
+
+  const getPos = function (current, active) {
+    const diff = current - active;
+    if (Math.abs(diff) > 2) {
+      return diff > 0 ? diff - 5 : diff + 5;
+    }
+    return diff;
+  };
+
+  let autoRotate = setInterval(() => {
+    const current = elems.find((elem) => elem.dataset.pos == 0);
+    const next = elems.find((elem) => elem.dataset.pos == 1) || elems[0];
+    if (next) update(next);
+  }, 2000);
+
+  carouselList?.addEventListener("mouseenter", () => clearInterval(autoRotate));
+  carouselList?.addEventListener("mouseleave", () => {
+    autoRotate = setInterval(() => {
+      const current = elems.find((elem) => elem.dataset.pos == 0);
+      const next = elems.find((elem) => elem.dataset.pos == 1) || elems[0];
+      if (next) update(next);
+    }, 3000);
+  });
+}
+
+// -------------------------------------------
+// Show/hide answers when user clicks on question
+// -------------------------------------------
+function dropDescription(element) {
+  const description = element?.nextElementSibling;
+  if (!description) return;
+  description.classList.toggle("hidden");
+}
+window.dropDescription = dropDescription; // Expose globally
+
+// -------------------------------------------
+// Popup toggling and outside click close
+// -------------------------------------------
+function togglePopup(id) {
+  const popups = document.querySelectorAll(".popup");
+  popups.forEach((popup) => popup.classList.add("hidden"));
+
+  const popup = document.getElementById(id);
+  popup?.classList.toggle("hidden");
+}
+window.togglePopup = togglePopup;
+
+window.addEventListener("click", (event) => {
+  if (event.target.classList.contains("popup")) {
+    event.target.classList.add("hidden");
+  }
+});
+
+// -------------------------------------------
+// Debounce function to optimize performance
+// -------------------------------------------
 function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
     clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
+    timeout = setTimeout(() => func(...args), wait);
   };
 }
 
-// Handle hash-based scrolling
+// -------------------------------------------
+// Hash scroll handler for anchor links
+// -------------------------------------------
 function handleHashScroll() {
   const hash = window.location.hash;
   if (hash) {
@@ -32,8 +262,7 @@ function handleHashScroll() {
     if (targetElement) {
       const navbarHeight = 80;
       const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - navbarHeight;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
 
       window.scrollTo({
         top: offsetPosition,
@@ -43,28 +272,34 @@ function handleHashScroll() {
   }
 }
 
-// Initialize the application
+// -------------------------------------------
+// Initialize all core functions on load
+// -------------------------------------------
 function init() {
-  // Handle initial hash scroll
+  navbar();
+  carousel();
   handleHashScroll();
 
-  // Handle hash changes
   window.addEventListener("hashchange", handleHashScroll);
-
-  // Optimize scroll performance
   window.addEventListener(
     "scroll",
     debounce(() => {
-      // Add any scroll-based optimizations here
+      // Add scroll-based logic if needed
     }, 100)
   );
 }
 
-// Wait for DOM to be fully loaded
+// Start initialization after DOM is loaded
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", init);
 } else {
   init();
 }
-
+// Reset the contact form
+window.addEventListener("pageshow", function () {
+  const form = document.querySelector("form");
+  if (form) {
+    form.reset();
+  }
+});
 

@@ -1064,9 +1064,6 @@
   </script>
   <!-- Privacy Policy End -->
     <script src="main.js"></script>
-  <script src="navbar.js"></script>
-  <script src="loading.js"></script>
-
   <!-- Our reach carousel -->
   <script>
     const originalSlides1 = [
@@ -1161,9 +1158,10 @@
           : "bg-gray-300"
           }`;
       });
-      // Update link
-      getBtn1.href = originalSlides1[activeSlide1 - 1].link;
-    }
+      if (activeSlide1 > 0 && activeSlide1 <= originalSlides1.length) {
+    getBtn1.href = originalSlides1[activeSlide1 - 1].link;
+  }
+}
     track1.addEventListener("transitionend", () => {
       if (activeSlide1 === 0) {
         activeSlide1 = originalSlides1.length;
