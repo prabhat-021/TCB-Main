@@ -95,7 +95,7 @@ function navbar() {
 }
 
 // -------------------------------------------
-// Carousel functionality with auto-rotation
+//About Page Carousel functionality with auto-rotation
 // -------------------------------------------
 function carousel() {
   const carouselList = document.querySelector(".carousel__list");

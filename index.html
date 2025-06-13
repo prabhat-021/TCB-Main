@@ -584,25 +584,25 @@
     </script>
     <!--  -->
     <!-- Our Reach -->
-    <div class="flex flex-col md:flex-row w-full rounded-lg overflow-hidden md:h-96 bg-white my-8 md:my-16">
+    <div class="flex flex-col md:flex-row w-full rounded-lg overflow-hidden md:h-96 bg-white my-8 md:my-16 shadow-xl">
       <!-- Left Panel -->
-      <div class="w-full md:w-2/5 bg-[#FCFCFC] flex flex-col justify-center items-center p-6 shadow-lg">
-        <div class="flex flex-col items-center justify-center gap-4 mb-6">
-          <h2 class="text-md lg:text-xl font-bold text-primary">Our Reach</h2>
-          <p class="text-lg md:text-2xl g:text-4xl font-bold">1000+</p>
-          <p class="text-md md:text-xl lg:text-2xl text-black font-bold">
+      <div class="w-full md:w-2/5 bg-[#FCFCFC] flex flex-col justify-center items-center p-6 space-y-6">
+        <div class="flex flex-col items-center gap-2 text-center">
+          <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-primary">Our Reach</h2>
+          <p id="count" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-black">0</p>
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-black font-semibold">
             Clients and Customers
           </p>
         </div>
-
         <div class="flex flex-col items-center space-y-6">
           <div class="flex space-x-2" id="dots1"></div>
           <a
-            class="get-btn1 px-6 py-3 bg-primary opacity-60 text-opacity-100 text-white font-medium shadow-lg rounded-lg hover:bg-primary hover:opacity-100 transition duration-300">
+            class="get-btn1 px-6 py-3 bg-primary opacity-60 text-opacity-100 text-white font-semibold shadow-lg rounded-lg hover:opacity-100 transition duration-300">
             Get Started
           </a>
         </div>
       </div>
+
       <!-- Right Carousel Panel -->
       <div class="relative w-full md:w-3/5 overflow-hidden">
         <div id="carousel-track1" class="flex transition-transform duration-500 ease-in-out h-full px-8 space-x-6">
@@ -610,6 +610,40 @@
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counter = document.getElementById("count");
+        let started = false;
+
+        const startCount = () => {
+          let count = 0;
+          const target = 1000;
+          const update = () => {
+            if (count < target) {
+              count += Math.ceil(target / 150); // speed
+              if (count > target) count = target;
+              counter.textContent = count + "+";
+              requestAnimationFrame(update);
+            }
+          };
+          update();
+        };
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting && !started) {
+                started = true;
+                startCount();
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        if (counter) observer.observe(counter);
+      });
+    </script>
     <!--Get in touch  -->
     <div
       class="w-full max-w-[95%] sm:max-w-[90%] md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 py-8 md:py-12 lg:py-16">
@@ -1207,7 +1241,6 @@
       });
     });
   </script>
-
   <!-- testimonial Carousel -->
   <script>
     const testimonialData = [
