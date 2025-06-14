@@ -18,18 +18,24 @@ function navbar() {
   const mobileMenu = document.getElementById("mobile-menu");
   const closeIcon = document.getElementById("close-icon");
   const hamburgerIcon = document.getElementById("hamburger-icon");
+// Check if this is the privacy page
+  const isPrivacyPage = document.body.classList.contains("privacy-page");
 
-  // Change navbar background on scroll
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      navbar.classList.add("bg-navColor");
-    } else {
-      if (mobileMenu.classList.contains("hidden")) {
-        navbar.classList.remove("bg-navColor");
+  if (isPrivacyPage) {
+    // On privacy page: always show bg-navColor, never remove it
+    navbar.classList.add("bg-navColor");
+  } else {
+    // On other pages: transparent at top, bg-navColor on scroll
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+        navbar.classList.add("bg-navColor");
+      } else {
+        if (mobileMenu.classList.contains("hidden")) {
+          navbar.classList.remove("bg-navColor");
+        }
       }
-    }
-  });
-
+    });
+  }
   // Toggle mobile menu
   mobileMenuButton.addEventListener("click", function (e) {
     e.stopPropagation();
