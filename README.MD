@@ -13,6 +13,7 @@ The Capital Box is a professional financial services platform designed to provid
 - **Icons**: Font Awesome
 - **Animations**: Custom CSS animations
 - **Responsive Design**: Mobile-first approach
+- **Form Handling**: Web3Forms API
 
 ## 🌟 Features
 
@@ -24,36 +25,39 @@ The Capital Box is a professional financial services platform designed to provid
 
 ### 🎯 User Experience
 - Responsive design for all device sizes
-- Interactive UI elements
+- Interactive UI elements with hover effects
 - Loading animations for better perceived performance
 - Mobile-friendly navigation with dropdown menus
-- Privacy policy modal
+- Contact form with validation
+- Privacy policy page
+- Carousel/slider for service showcasing
+- Flip cards for interactive content display
 
 ## 📁 Project Structure
 
 ```
 TCB-Main/
-├── index.html              # Homepage
-├── About.html              # About us page
-├── contactUs.html          # Contact information
-├── taxSolution.html        # Tax services page
-├── retirementSolutions.html # Retirement planning page
-├── networkSolution.html    # Networking services page
-├── riskManagement.html     # Risk management services page
+├── index.html              # Homepage with main service offerings
+├── About.html              # About us page with company information
+├── contactUs.html          # Contact form and information
+├── taxSolution.html        # Tax planning and services
+├── retirementSolutions.html # Retirement planning services
+├── networkSolution.html    # Business networking services
+├── riskManagement.html     # Risk management services
 ├── careers.html            # Career opportunities
-├── styles.css              # Main stylesheet
-├── global.css              # Global styles
-├── src/                    # Source files
-│   └── js/                 # JavaScript files
-│       ├── main.js         # Main JavaScript functionality
-│       ├── navbar.js       # Navigation functionality
-│       ├── carousel.js     # Carousel/slider functionality
-│       ├── togglePopup.js  # Modal popup functionality
-│       ├── dropDescription.js # Dropdown description functionality
-│       └── loading.js      # Loading animation functionality
+├── privacy.html            # Privacy policy
+├── main.js                 # Main JavaScript functionality
+├── styles.css              # Main Tailwind-compiled stylesheet
+├── global.css              # Global custom styles
 └── public/                 # Public assets
     └── assets/             # Images and other static assets
         ├── logo-1.png      # Company logo
+        ├── hero-img.png    # Hero section background
+        ├── img-1.png       # Service image - Tax Solutions
+        ├── img-2.png       # Service image - Risk Management
+        ├── img-3.png       # Service image - Retirement Solutions
+        ├── SERVICES01.png  # Service background image
+        ├── SERVICES02.png  # Service background image
         └── ...             # Other images and assets
 ```
 
@@ -61,7 +65,7 @@ TCB-Main/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/TCB-Main.git
+   git clone https://github.com/prabhat-021/TCB-Main.git
    ```
 
 2. Open the project in your preferred code editor
@@ -73,26 +77,35 @@ TCB-Main/
 To modify or extend the website:
 
 1. Edit HTML files to update content
-2. Modify CSS files for styling changes
-3. Update JavaScript files for functionality changes
+2. Modify CSS files for styling changes:
+   - `global.css` for custom styles
+   - `styles.css` contains the compiled Tailwind CSS
+3. Update JavaScript in `main.js` for functionality changes
 4. Add new assets to the `public/assets` directory
 
 ## 📱 Responsive Design
 
 The website is fully responsive and optimized for:
-- Mobile devices
-- Tablets
-- Desktop computers
+- Mobile devices (< 640px)
+- Tablets (640px - 1024px)
+- Desktop computers (> 1024px)
+
+The responsive design includes:
+- Mobile-friendly navigation menu
+- Flexible grid layouts
+- Responsive typography
+- Optimized images for different screen sizes
 
 ## 🔒 Privacy
 
-The website includes a comprehensive privacy policy accessible via the footer link.
+The website includes a comprehensive privacy policy page that details how user data is collected, stored, and processed. The privacy policy is accessible via the footer link on all pages.
 
 ## 📞 Contact
 
 For more information, please contact:
 - Email: [contact@thecapitalbox.com](mailto:contact@thecapitalbox.com)
 - Website: [www.thecapitalbox.com](https://www.thecapitalbox.com)
+- Business Hours: Monday – Saturday: 09:30 AM to 6:30 PM
 
 ## 📄 License
 
