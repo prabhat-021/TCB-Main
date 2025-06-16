@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Read the privacy policy for The Capital Box. Learn how we collect, use, and protect your data." />
   <title>The Capital Box - Privacy Policy</title>
@@ -14,7 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" href="public/assets/logo-1.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="public/assets/logo-1.png" type="image/png" sizes="16x16" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@400;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <meta property="og:title" content="The Capital Box - Privacy Policy" />
@@ -36,10 +37,10 @@
   <div id="loading-spinner" class="fixed inset-0 flex items-center justify-center bg-white z-50">
     <div class="loader"></div>
   </div>
+
   <!-- Navbar -->
   <nav id="navbar" class="navbar fixed top-0 w-full z-40 py-4 md:px-6 transition-all duration-300">
-    <!-- ...your navbar code remains unchanged... -->
-    <div class="mx-auto flex justify-between items-center px-2">
+    <div class="mx-auto flex justify-between items-center px-4">
       <div class="flex items-center">
         <a href="./index.html" class="text-white text-xl font-bold">
           <img src="public/assets/logo-1.png" alt="" class="h-8" />
@@ -101,7 +102,7 @@
         </button>
       </div>
     </div>
-    <!-- ...mobile menu unchanged... -->
+    <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-navColor bg-opacity-40 mt-4 py-2">
       <a href="./index.html" class="block px-6 py-2 text-white hover:bg-primary">Home</a>
       <div class="relative">
@@ -132,209 +133,330 @@
     </div>
   </nav>
 
-  <main class="policy-card">
-    <h1>Privacy Policy</h1>
+  <!-- Privacy Policy Hero Section -->
+  <section class="privacy-hero bg-gradient-to-r from-blue-900 to-blue-700">
+    <div class="container mx-auto px-4 sm:px-6 py-24 text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">Privacy Policy</h1>
+      <p class="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">Your trust is our priority. Learn how we protect
+        your personal information.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>1. Introduction and Scope</h2>
-      <ul>
-        <li><strong>Purpose:</strong> This policy explains how the company collects, uses, stores, and transfers
-          personal information.</li>
-        <li><strong>Legal Basis:</strong> The company complies with relevant data protection laws (e.g., GDPR, local
-          financial regulations).</li>
-        <li><strong>Relationship with Terms & Conditions:</strong> This privacy policy should be read in conjunction
-          with the company's website terms and conditions.</li>
-      </ul>
-    </section>
+  <!-- Privacy Policy Content -->
+  <main class="policy-container">
+    <div class="policy-card">
+      <div class="last-updated">
+        <p><i class="fas fa-calendar-alt mr-2"></i> Last updated: July 15, 2016</p>
+      </div>
 
-    <section>
-      <h2>2. Data Collected</h2>
-      <p>We collect various types of personal information to provide our services, fulfill legal obligations, and for
-        business operations. This may include:</p>
-      <ul>
-        <li><strong>Identity Data:</strong> Name, date of birth, nationality, gender, government-issued IDs (e.g.,
-          passport, tax ID number).</li>
-        <li><strong>Contact Data:</strong> Email address, mailing address, phone numbers.</li>
-        <li><strong>Financial Data:</strong> Bank account details, credit/debit card information, transaction history,
-          loan details, creditworthiness data, income details, source of wealth.</li>
-        <li><strong>Technical Data:</strong> IP address, login data, browser type and version, operating system, and
-          other device information collected through cookies and similar technologies.</li>
-        <li><strong>Usage Data:</strong> Information about how individuals use the company's website, products, and
-          services.</li>
-        <li><strong>Special Categories (rarely, and with explicit consent/legal basis):</strong> Information about
-          health (e.g., for insurance advice), biometric data, or details relevant to politically exposed persons (PEPs)
-          for compliance purposes.</li>
-      </ul>
-    </section>
+      <div class="policy-intro">
+        <p>At The Capital Box, we are committed to protecting your privacy and ensuring the security of your personal
+          information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when
+          you visit our website or use our services.</p>
+      </div>
 
-    <section>
-      <h2>3. How Data is Collected</h2>
-      <ul>
-        <li><strong>Direct Interactions:</strong> Information provided directly by the user through forms, phone calls,
-          emails, or when registering for services.</li>
-        <li><strong>Automated Technologies:</strong> Data collected automatically through website usage, cookies, and
-          other tracking technologies.</li>
-        <li><strong>Third Parties/Public Sources:</strong> Information received from business partners (e.g., payment
-          services, analytics providers, credit reference agencies) or publicly available sources.</li>
-      </ul>
-    </section>
+      <div class="toc-container">
+        <h3 class="toc-title">Table of Contents</h3>
+        <ul class="toc-list">
+          <li><a href="#introduction">1. Introduction and Scope</a></li>
+          <li><a href="#data-collected">2. Data Collected</a></li>
+          <li><a href="#data-collection">3. How Data is Collected</a></li>
+          <li><a href="#data-processing">4. Purposes for Data Processing</a></li>
+          <li><a href="#data-sharing">5. Data Sharing and Disclosure</a></li>
+          <li><a href="#data-security">6. Data Security</a></li>
+          <li><a href="#data-retention">7. Data Retention</a></li>
+          <li><a href="#user-rights">8. User Rights</a></li>
+        </ul>
+      </div>
 
-    <section>
-      <h2>4. Purposes for Data Processing</h2>
-      <ul>
-        <li><strong>Service Provision:</strong> To operate, maintain, and provide financial products and services (e.g.,
-          processing transactions, managing accounts, offering loans/advances).</li>
-        <li><strong>Identity Verification & Compliance:</strong> To fulfill legal and regulatory obligations such as
-          Know Your Customer (KYC), anti-money laundering (AML), fraud prevention, and sanctions checks.</li>
-        <li><strong>Business Operations:</strong> For internal administration, accounting, improving services, and
-          conducting data analytics and research.</li>
-        <li><strong>Customer Relationship Management:</strong> To respond to inquiries, complaints, and manage the
-          customer relationship.</li>
-        <li><strong>Marketing:</strong> To offer products and services that may be of interest to the user (with opt-out
-          options usually provided).</li>
-      </ul>
-    </section>
+      <section id="introduction">
+        <h2><span class="section-number">1</span> Introduction and Scope</h2>
+        <div class="policy-content">
+          <ul>
+            <li><strong>Purpose:</strong> The policy explains how the company collects, uses, stores, and transfers personal information.</li>
+            <li><strong>Legal Basis:</strong> It often references relevant data protection laws (e.g., GDPR, local financial regulations) that the company complies with.</li>
+            <li><strong>Relationship with Terms & Conditions:</strong> It clarifies that the privacy policy should be read in conjunction with the company's website terms and conditions.</li>
+          </ul>
+        </div>
+      </section>
 
-    <section>
-      <h2>5. Data Sharing and Disclosure</h2>
-      <ul>
-        <li>We do not sell personal information.</li>
-        <li><strong>Affiliates and Group Companies:</strong> For everyday business purposes and to provide integrated
-          services.</li>
-        <li><strong>Trusted Business Partners and Service Providers:</strong> Companies that perform services on our
-          behalf (e.g., IT services, payment processing, customer service). These partners are authorized to use
-          personal information only as necessary to provide their services.</li>
-        <li><strong>Regulatory Authorities and Law Enforcement:</strong> When required by law, court order, or to
-          cooperate with legal investigations and prevent criminal activity.</li>
-        <li><strong>Credit Bureaus and Identity Verification Services:</strong> For assessing creditworthiness and
-          verifying identity.</li>
-      </ul>
-    </section>
+      <section id="data-collected">
+        <h2><span class="section-number">2</span> Data Collected</h2>
+        <div class="policy-content">
+          <p>Financial companies collect various types of personal information to provide their services, fulfil legal obligations, and for business operations. This typically includes:</p>
+          <div class="data-categories">
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="fas fa-id-card"></i>
+              </div>
+              <h4>Identity Data</h4>
+              <p>Name, date of birth, nationality, gender, government-issued IDs (e.g., passport, tax ID number).</p>
+            </div>
 
-    <section>
-      <h2>6. Data Security</h2>
-      <ul>
-        <li>We employ physical, electronic, and procedural safeguards to protect personal information from unauthorized
-          access, use, alteration, disclosure, and destruction.</li>
-        <li>Measures include encryption for sensitive information, secured files and buildings, and employee training on
-          privacy obligations.</li>
-      </ul>
-    </section>
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>Contact Data</h4>
+              <p>Email address, mailing address, phone numbers</p>
+            </div>
 
-    <section>
-      <h2>7. Data Retention</h2>
-      <ul>
-        <li>Personal information is retained only for as long as necessary to fulfill the purposes for which it was
-          collected, including satisfying legal, accounting, or reporting requirements.</li>
-      </ul>
-    </section>
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <h4>Financial Data</h4>
+              <p>Bank account details, credit/debit card information, transaction history, loan details, creditworthiness data, income details, source of wealth.</p>
+            </div>
 
-    <section>
-      <h2>8. User Rights</h2>
-      <ul>
-        <li>The right to access their personal data.</li>
-        <li>The right to request correction of inaccurate data.</li>
-        <li>The right to object to the processing of personal data (e.g., for direct marketing).</li>
-        <li>The right to withdraw consent (where consent is the legal basis for processing).</li>
-      </ul>
-    </section>
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <h4>Technical Data</h4>
+              <p>IP address, login data, browser type and version, operating system, and other device information collected through cookies and similar technologies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="contact">
-      For any questions about this privacy policy, please contact us at
-      <a href="mailto:contactus@thecapitalbox.com">contactus@thecapitalbox.com</a>
+      <section id="data-collection">
+        <h2><span class="section-number">3</span> How Data is Collected</h2>
+        <div class="policy-content">
+          <ul>
+            <li><strong>Direct Interactions:</strong> Information provided directly by the user through forms, phone
+              calls, emails, or when registering for services.</li>
+            <li><strong>Automated Technologies:</strong> Data collected automatically through website usage, cookies,
+              and other tracking technologies.</li>
+            <li><strong>Third Parties/Public Sources:</strong> Information received from business partners (e.g.,
+              payment services, analytics providers, credit reference agencies) or publicly available sources.</li>
+          </ul>
+
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="info-content">
+              <h4>Cookie Policy</h4>
+              <p>We use cookies to enhance your experience on our website. You can manage your cookie preferences
+                through your browser settings.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-processing">
+        <h2><span class="section-number">4</span> Purposes for Data Processing</h2>
+        <div class="policy-content">
+          <ul>
+            <li><strong>Service Provision:</strong> To operate, maintain, and provide financial products and services
+              (e.g., processing transactions, managing accounts, offering loans/advances).</li>
+            <li><strong>Identity Verification & Compliance:</strong> To fulfill legal and regulatory obligations such as
+              Know Your Customer (KYC), anti-money laundering (AML), fraud prevention, and sanctions checks.</li>
+            <li><strong>Business Operations:</strong> For internal administration, accounting, improving services, and
+              conducting data analytics and research.</li>
+            <li><strong>Customer Relationship Management:</strong> To respond to inquiries, complaints, and manage the
+              customer relationship.</li>
+            <li><strong>Marketing:</strong> To offer products and services that may be of interest to the user (with
+              opt-out options usually provided).</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="data-sharing">
+        <h2><span class="section-number">5</span> Data Sharing and Disclosure</h2>
+        <div class="policy-content">
+          <!-- Simplified data sharing visualization that works on all screen sizes -->
+          <div class="data-sharing-container">
+            <div class="data-center-box">
+              <i class="fas fa-shield-alt"></i>
+              <span>Your Data</span>
+            </div>
+
+            <div class="data-sharing-arrows">
+              <div class="arrow-down"></div>
+            </div>
+
+            <div class="data-sharing-entities">
+              <div class="data-entity-box">
+                <i class="fas fa-building"></i>
+                <h4>Affiliates</h4>
+              </div>
+
+              <div class="data-entity-box">
+                <i class="fas fa-handshake"></i>
+                <h4>Partners</h4>
+              </div>
+
+              <div class="data-entity-box">
+                <i class="fas fa-gavel"></i>
+                <h4>Authorities</h4>
+              </div>
+
+              <div class="data-entity-box">
+                <i class="fas fa-credit-card"></i>
+                <h4>Credit Bureaus</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="policy-notice-box">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>We do not sell personal information.</p>
+          </div>
+
+          <ul class="policy-bullet-list">
+            <li><strong>Affiliates and Group Companies:</strong> For everyday business purposes and to provide
+              integrated services.</li>
+            <li><strong>Trusted Business Partners and Service Providers:</strong> Companies that perform services on the financial company's behalf (e.g., IT services, payment processing, customer service). These partners are typically authorized to use personal information only as necessary to provide their services.</li>
+            <li><strong>Regulatory Authorities and Law Enforcement:</strong> When required by law, court order, or to
+              cooperate with legal investigations and prevent criminal activity.</li>
+            <li><strong>Credit Bureaus and Identity Verification Services:</strong> For assessing creditworthiness and
+              verifying identity.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="data-security">
+        <h2><span class="section-number">6</span> Data Security</h2>
+        <div class="policy-content">
+          <div class="security-features">
+            <div class="feature">
+              <i class="fas fa-lock"></i>
+              <span>Encryption</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-user-shield"></i>
+              <span>Access Controls</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-shield-alt"></i>
+              <span>Firewalls</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-chart-line"></i>
+              <span>Monitoring</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>We employ physical, electronic, and procedural safeguards to protect personal information from
+              unauthorized access, use, alteration, disclosure, and destruction.</li>
+            <li>Measures include encryption for sensitive information, secured files and buildings, and employee
+              training on privacy obligations.</li>
+            <li>We regularly review and update our security practices to address new threats and vulnerabilities.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="data-retention">
+        <h2><span class="section-number">7</span> Data Retention</h2>
+        <div class="policy-content">
+          <!-- Responsive card-based retention display -->
+          <div class="retention-cards">
+            <div class="retention-card">
+              <div class="retention-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <div class="retention-period">6 months</div>
+              <div class="retention-type">Marketing Data</div>
+            </div>
+
+            <div class="retention-card">
+              <div class="retention-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+              </div>
+              <div class="retention-period">5 years</div>
+              <div class="retention-type">Financial Records</div>
+            </div>
+
+            <div class="retention-card">
+              <div class="retention-icon">
+                <i class="fas fa-file-contract"></i>
+              </div>
+              <div class="retention-period">7 years</div>
+              <div class="retention-type">Tax Documents</div>
+            </div>
+
+            <div class="retention-card">
+              <div class="retention-icon">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div class="retention-period">10 years</div>
+              <div class="retention-type">Legal Requirements</div>
+            </div>
+          </div>
+
+          <ul>
+            <li>Personal information is retained only for as long as necessary to fulfill the purposes for which it was
+              collected, including satisfying legal, accounting, or reporting requirements.</li>
+            <li>Retention periods vary depending on the type of data and legal obligations.</li>
+            <li>When data is no longer needed, we securely delete or anonymize it.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="user-rights">
+        <h2><span class="section-number">8</span> User Rights</h2>
+        <div class="policy-content">
+          <div class="rights-grid">
+            <div class="right-card">
+              <i class="fas fa-eye"></i>
+              <h4>Right to Access</h4>
+              <p>Request a copy of your personal data we hold</p>
+            </div>
+            <div class="right-card">
+              <i class="fas fa-edit"></i>
+              <h4>Right to Rectification</h4>
+              <p>Correct inaccurate or incomplete data</p>
+            </div>
+            <div class="right-card">
+              <i class="fas fa-trash-alt"></i>
+              <h4>Right to Erasure</h4>
+              <p>Request deletion of your personal data</p>
+            </div>
+            <div class="right-card">
+              <i class="fas fa-ban"></i>
+              <h4>Right to Object</h4>
+              <p>Object to certain processing activities</p>
+            </div>
+          </div>
+
+          <ul>
+            <li>The right to access their personal data.</li>
+            <li>The right to request correction of inaccurate data.</li>
+            <li>The right to object to the processing of personal data (e.g., for direct marketing).</li>
+            <li>The right to withdraw consent (where consent is the legal basis for processing).</li>
+          </ul>
+
+          <div class="cta-box">
+            <p>To exercise any of these rights, please contact us using the information below.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="contact-section">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <div class="contact-content">
+            <h3>Have Questions About Your Privacy?</h3>
+            <p>Our privacy team is available to address any concerns you may have about how we handle your personal
+              information.</p>
+            <div class="contact-methods">
+              <a href="mailto:privacy@thecapitalbox.com" class="contact-button">
+                <i class="fas fa-envelope"></i> Email Us
+              </a>
+              <a href="tel:+91124428427" class="contact-button secondary">
+                <i class="fas fa-phone"></i> Call Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
-
-  <style>
-    body {
-      background: #f4f6fb;
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    .policy-card {
-      background: #f4f6fb;
-      border-radius: 1.25rem;
-      box-shadow: 0 10px 32px rgba(227, 219, 219, 0.08);
-      border: 1px solid #a6a9ae;
-      padding: 2rem 2rem;
-      margin: 5rem auto;
-      max-width: 740px;
-      width: 95%;
-    }
-
-    .policy-card h1 {
-      font-size: 2rem;
-      font-weight: 500;
-      text-align: center;
-      color: #cbba4f;
-      margin-bottom: 2rem;
-      text-transform: uppercase;
-    }
-
-    .policy-card h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin-top: 1.8rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .policy-card p,
-    .policy-card ul {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: #333;
-      margin-bottom: 1.2rem;
-    }
-
-    .policy-card ul {
-      padding-left: 1.25rem;
-    }
-
-    .policy-card li {
-      margin-bottom: 0.5rem;
-    }
-
-    .policy-card strong {
-      color: #1a237e;
-      font-weight: 600;
-    }
-
-    .policy-card .contact {
-      margin-top: 2.5rem;
-      color: #666;
-      text-align: center;
-      font-size: 1.05rem;
-    }
-
-    .policy-card .contact a {
-      color: #cbba4f;
-      font-weight: 600;
-      text-decoration: underline;
-    }
-
-    @media (max-width: 640px) {
-      .policy-card {
-        padding: 1.5rem 1rem;
-        margin: 4rem auto;
-      }
-
-      .policy-card h1 {
-        font-size: 1.75rem;
-      }
-
-      .policy-card h2 {
-        font-size: 1.1rem;
-      }
-
-      .policy-card p,
-      .policy-card ul {
-        font-size: 1rem;
-      }
-    }
-  </style>
-
 
   <!-- Footer -->
   <footer class="bg-[#4B4B4B] text-white py-10 px-6 text-sm md:text-base">
@@ -384,7 +506,7 @@
           <li>+91 124428427</li>
           <li>contactus@thecapitalbox.com</li>
           <li>
-            <a href="privacy.html" class="hover:text-primary cursor-pointer">Privacy &amp; Policy</a>
+            <a href="/privacy.html" class="hover:text-primary cursor-pointer">Privacy & Policy</a>
           </li>
         </ul>
       </div>
@@ -408,6 +530,985 @@
       © 2016 All rights reserved | <a href="index.html" class="hover:text-primary font-semibold  ">The Capital Box</a>
     </div>
   </footer>
+
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #34495e;
+      --accent-color: #f5d95a;
+      --text-color: #2d2d2d;
+      --light-text: #7f8c8d;
+      --border-color: #e0e0e0;
+      --bg-light: #f9fafb;
+      --bg-dark: #2c3e50;
+    }
+
+    /* Universal box-sizing and overflow fix */
+    html,
+    body {
+      box-sizing: border-box;
+      max-width: 100vw;
+      overflow-x: hidden;
+      font-family: 'Open Sans', sans-serif;
+      color: var(--text-color);
+      background-color: var(--bg-light);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    /* Responsive images and SVGs */
+    img,
+    svg {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Container utility */
+    .container,
+    .policy-container {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    @media (min-width: 576px) {
+
+      .container,
+      .policy-container {
+        max-width: 540px;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      .container,
+      .policy-container {
+        max-width: 720px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .container,
+      .policy-container {
+        max-width: 960px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+
+      .container,
+      .policy-container {
+        max-width: 1000px;
+      }
+    }
+
+    /* Privacy Hero Section */
+    .privacy-hero {
+      padding-top: 100px;
+      background-color: #baa548;
+      color: black;
+      text-align: center;
+    }
+
+    .privacy-hero h1 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .privacy-hero p {
+      opacity: 0.9;
+    }
+
+    /* Policy Card */
+    .policy-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      border: 1px solid var(--border-color);
+      padding: 2rem;
+      margin: -60px auto 3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (min-width: 768px) {
+      .policy-card {
+        padding: 3rem;
+        margin-top: -80px;
+        margin-bottom: 5rem;
+      }
+    }
+
+    /* Section headers */
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin: 2.5rem 0 1.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-color);
+      display: flex;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      section h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .section-number {
+      width: 36px;
+      height: 36px;
+      background: var(--accent-color);
+      color: var(--primary-color);
+      font-weight: 700;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      font-size: 1.1rem;
+    }
+
+    @media (min-width: 768px) {
+      .section-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin-right: 15px;
+      }
+    }
+
+    /* Table of Contents */
+    .toc-container {
+      background: #f5f7fa;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .toc-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin: 0 0 1rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .toc-title::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: var(--accent-color);
+      margin-right: 10px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (min-width: 576px) {
+      .toc-list {
+        columns: 2;
+        column-gap: 2rem;
+      }
+    }
+
+    .toc-list li {
+      margin-bottom: .75rem;
+      break-inside: avoid;
+    }
+
+    .toc-list a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: all .3s;
+      display: block;
+      padding: 0.5rem 0;
+    }
+
+    .toc-list a:hover {
+      color: var(--accent-color);
+      transform: translateX(5px);
+    }
+
+    /* Last updated */
+    .last-updated {
+      text-align: right;
+      color: var(--light-text);
+      font-size: .95rem;
+      margin-bottom: 2rem;
+    }
+
+    .last-updated i {
+      margin-right: 5px;
+    }
+
+    /* Policy intro */
+    .policy-intro {
+      background: #f8f9fa;
+      border-left: 4px solid var(--accent-color);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* Policy content lists */
+    .policy-content {
+      padding: 0 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .policy-content {
+        padding: 0 1rem;
+      }
+    }
+
+    .policy-content ul {
+      padding-left: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .policy-content ul {
+        padding-left: 1.5rem;
+      }
+    }
+
+    .policy-content li {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .policy-content li::before {
+      content: "•";
+      color: var(--accent-color);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .policy-content strong {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    /* Data Categories Grid */
+    .data-categories {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (min-width: 576px) {
+      .data-categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .data-categories {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .category-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all .3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .05);
+      min-width: 0;
+      word-break: break-word;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    }
+
+    .category-icon {
+      width: 50px;
+      height: 50px;
+      background: #f0f7ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      color: var(--primary-color);
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .category-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+      }
+    }
+
+    .category-card h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    @media (min-width: 768px) {
+      .category-card h4 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .category-card p {
+      font-size: .85rem;
+      color: var(--light-text);
+      margin: 0;
+    }
+
+    @media (min-width: 768px) {
+      .category-card p {
+        font-size: .9rem;
+      }
+    }
+
+    /* Info Box */
+    .info-box {
+      background: #f0f7ff;
+      border-left: 4px solid #4a90e2;
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem;
+      margin: 2rem 0;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      .info-box {
+        padding: 1.5rem;
+      }
+    }
+
+    .info-icon {
+      color: #4a90e2;
+      font-size: 1.25rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .info-icon {
+        font-size: 1.5rem;
+      }
+    }
+
+    .info-content h4 {
+      margin: 0 0 .5rem 0;
+      color: var(--primary-color);
+      font-size: 1.1rem;
+    }
+
+    .info-content p {
+      margin: 0;
+      color: var(--light-text);
+      font-size: .9rem;
+    }
+
+    /* Data Sharing Graphic (simplified for overflow safety) */
+    .sharing-graphic {
+      width: 100%;
+      max-width: 500px;
+      margin: 2rem auto;
+      overflow-x: auto;
+    }
+
+    /* Security Features */
+    .security-features {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 576px) {
+      .security-features {
+        gap: 1.5rem;
+      }
+    }
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 80px;
+    }
+
+    @media (min-width: 768px) {
+      .feature {
+        min-width: 100px;
+      }
+    }
+
+    .feature i {
+      font-size: 1.75rem;
+      color: var(--accent-color);
+      margin-bottom: .5rem;
+    }
+
+    @media (min-width: 768px) {
+      .feature i {
+        font-size: 2rem;
+      }
+    }
+
+    .feature span {
+      font-size: .8rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .feature span {
+        font-size: .9rem;
+      }
+    }
+
+    /* User Rights Grid */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    @media (min-width: 576px) {
+      .rights-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .rights-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .right-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all .3s;
+      min-width: 0;
+      word-break: break-word;
+    }
+
+    @media (min-width: 768px) {
+      .right-card {
+        padding: 1.5rem;
+      }
+    }
+
+    .right-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    }
+
+    .right-card i {
+      font-size: 1.75rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .right-card i {
+        font-size: 2rem;
+      }
+    }
+
+    .right-card h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: .5rem;
+      color: var(--primary-color);
+    }
+
+    @media (min-width: 768px) {
+      .right-card h4 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .right-card p {
+      font-size: .85rem;
+      color: var(--light-text);
+      margin: 0;
+    }
+
+    @media (min-width: 768px) {
+      .right-card p {
+        font-size: .9rem;
+      }
+    }
+
+    /* CTA Box */
+    .cta-box {
+      background: #f0f7ff;
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .cta-box {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Contact Section */
+    .contact-section {
+      margin-top: 4rem;
+    }
+
+    .contact-card {
+      background: var(--primary-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    }
+
+    @media (min-width: 768px) {
+      .contact-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 2.5rem;
+        align-items: center;
+      }
+    }
+
+    .contact-icon {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .contact-icon {
+        font-size: 3rem;
+        margin-right: 2rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .contact-content h3 {
+      font-size: 1.4rem;
+      margin: 0 0 1rem 0;
+    }
+
+    @media (min-width: 768px) {
+      .contact-content h3 {
+        font-size: 1.6rem;
+      }
+    }
+
+    .contact-content p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      opacity: 0.9;
+    }
+
+    @media (min-width: 768px) {
+      .contact-content p {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    @media (min-width: 576px) {
+      .contact-methods {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .contact-methods {
+        justify-content: flex-start;
+      }
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-color);
+      color: var(--primary-color);
+      padding: 0.75rem 1.25rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all .3s;
+      width: 100%;
+    }
+
+    @media (min-width: 576px) {
+      .contact-button {
+        width: auto;
+      }
+    }
+
+    .contact-button i {
+      margin-right: 8px;
+    }
+
+    .contact-button:hover {
+      background: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, .15);
+    }
+
+    .contact-button.secondary {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .contact-button.secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+
+
+    @media (max-width: 320px) {
+      .privacy-hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .privacy-hero p {
+        font-size: .9rem;
+      }
+
+      .policy-card {
+        margin-top: -40px;
+        padding: 1rem;
+      }
+
+      section h2 {
+        font-size: 1.3rem;
+      }
+
+      .section-number {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        margin-right: 8px;
+      }
+
+      .category-card,
+      .right-card {
+        padding: 1rem;
+      }
+
+      .contact-button {
+        padding: .6rem 1rem;
+        font-size: .9rem;
+      }
+    }
+
+    /* Highly responsive data sharing section */
+    .data-sharing-container {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .data-center-box {
+      width: 120px;
+      height: 120px;
+      background: #2c3e50;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+
+    .data-center-box i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #f7d94c;
+    }
+
+    .data-sharing-arrows {
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #2c3e50;
+    }
+
+    .data-sharing-entities {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    @media (min-width: 480px) {
+      .data-sharing-entities {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .data-sharing-entities {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .data-entity-box {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .data-entity-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      border-color: #f7d94c;
+    }
+
+    .data-entity-box i {
+      font-size: 1.75rem;
+      color: #2c3e50;
+      margin-bottom: 0.75rem;
+    }
+
+    .data-entity-box h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .policy-notice-box {
+      background: #f8f9fa;
+      border-left: 4px solid #f7d94c;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .policy-notice-box i {
+      font-size: 1.25rem;
+      color: #f7d94c;
+      margin-right: 0.75rem;
+    }
+
+    .policy-notice-box p {
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .policy-bullet-list {
+      padding-left: 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .policy-bullet-list li {
+      position: relative;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .policy-bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: -1.25rem;
+      color: #f7d94c;
+      font-weight: bold;
+    }
+
+    /* Mobile optimizations */
+    @media (max-width: 480px) {
+      .data-center-box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .data-center-box i {
+        font-size: 1.5rem;
+      }
+
+      .data-entity-box {
+        padding: 1rem;
+      }
+
+      .data-entity-box i {
+        font-size: 1.5rem;
+      }
+
+      .policy-notice-box {
+        padding: 0.75rem;
+      }
+    }
+
+    /* Responsive retention cards */
+    .retention-cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    @media (min-width: 576px) {
+      .retention-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .retention-cards {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .retention-card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .retention-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-color: var(--accent-color, #f7d94c);
+    }
+
+    .retention-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color, #f7d94c);
+    }
+
+    .retention-icon {
+      margin: 0 auto 1rem;
+      width: 60px;
+      height: 60px;
+      background-color: #f8f9fa;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .retention-icon i {
+      font-size: 1.5rem;
+      color: var(--primary-color, #2c3e50);
+    }
+
+    .retention-period {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color, #2c3e50);
+      margin-bottom: 0.5rem;
+    }
+
+    .retention-type {
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    /* Mobile optimizations */
+    @media (max-width: 576px) {
+      .retention-card {
+        padding: 1.25rem;
+      }
+
+      .retention-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.75rem;
+      }
+
+      .retention-icon i {
+        font-size: 1.25rem;
+      }
+
+      .retention-period {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
   <script src="main.js"></script>
 </body>
 
